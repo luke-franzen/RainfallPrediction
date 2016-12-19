@@ -7,7 +7,7 @@ from hpelm import HPELM
 
 '''
 used HP-ELM implementation here (https://pypi.python.org/pypi/hpelm/1.0.4)
-trains the SLFN ELM in batch, minimizing RAM requirements (not all data loaded into memory)
+trains ELM in batch, minimizing RAM requirements
 was able to process 3 PB of information < 20 GB RAM 
 '''
 
