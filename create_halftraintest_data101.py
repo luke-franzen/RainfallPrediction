@@ -7,6 +7,10 @@ import matplotlib.pyplot as plt
 import math
 import random
 
+'''
+pre-processes all ~350,000 matrices from HDF5 file
+prepares/saves numpy arr train/test data files
+'''
 #location of hdf5 file from 'createhdf5_101all.py' script
 hdf = "/Users/lfranzen/bda/hdf5/data_101_all.hdf5"
 
@@ -23,7 +27,6 @@ box_width = 101
 label_index = math.floor(box_width*box_width/2)
 
 def main():
-
 	train_data = np.zeros(shape=(280628, 30600), dtype=np.int8)
 	train_index = 0
 	train_labels = []
